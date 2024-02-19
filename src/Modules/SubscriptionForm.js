@@ -89,7 +89,7 @@ const SubscriptionForm = () => {
     console.log("Sending requestData:", requestData);
 
     // Replace '<port>' with your backend server's port number
-    const apiUrl = '${process.env.REACT_APP_BACKEND_URL_POST}';
+    const apiUrl = 'http://localhost:5000/update_user';
 
     try {
         const response = await fetch(apiUrl, {
