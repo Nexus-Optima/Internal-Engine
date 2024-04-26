@@ -23,6 +23,18 @@ const Dashboard = () => {
           </CardContent>
         </CardActionArea>
       </Card>
+      <Card style={{ maxWidth: 345, margin: '10px' }} onClick={() => handleNavigate('/forecasting-model-test-results')}>
+        <CardActionArea>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Forecasting Test Results
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Check test models performance against current model for commodity forecasting.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
       {/* Add more cards for other tools in a similar fashion */}
     </div>
   );
